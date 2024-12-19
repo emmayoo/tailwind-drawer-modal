@@ -1,4 +1,5 @@
 import Bullet from "./Bullet";
+import Button from "./Button";
 import SimpleCalendar from "./Calandar";
 import SelectBox, { Option } from "./SelectBox";
 
@@ -25,7 +26,7 @@ const DrawerContent3 = () => {
     <>
       <div className="mt-12">
         <Bullet bulletColor="red" className="mb-[15px]">
-          <span className="text-gray-label tracking-custom text-lg font-semibold">
+          <span className="text-lg font-semibold tracking-custom text-gray-label">
             스케줄 템플릿
           </span>
         </Bullet>
@@ -35,7 +36,7 @@ const DrawerContent3 = () => {
       </div>
       <div className="mt-9">
         <Bullet bulletColor="red" className="mb-[15px]">
-          <span className="text-gray-label tracking-custom text-lg font-semibold">
+          <span className="text-lg font-semibold tracking-custom text-gray-label">
             담당 업무
           </span>
         </Bullet>
@@ -45,7 +46,7 @@ const DrawerContent3 = () => {
       </div>
       <div className="mt-9">
         <Bullet bulletColor="red" className="mb-[15px]">
-          <span className="text-gray-label tracking-custom text-lg font-semibold">
+          <span className="text-lg font-semibold tracking-custom text-gray-label">
             근무자
           </span>
         </Bullet>
@@ -57,12 +58,8 @@ const DrawerContent3 = () => {
         <SimpleCalendar />
       </div>
       <div className="mt-9 grid grid-cols-2 gap-5">
-        <button className="border-blue text-blue tracking-custom hover:bg-blue rounded-lg border py-3 hover:text-white">
-          취소
-        </button>
-        <button className="border-blue text-blue tracking-custom hover:bg-blue rounded-lg border py-3 hover:text-white">
-          스케줄 추가
-        </button>
+        <Button label="취소" />
+        <Button label="스케줄 추가" />
       </div>
     </>
   );

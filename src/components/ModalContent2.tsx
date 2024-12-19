@@ -1,4 +1,5 @@
 import Bullet from "./Bullet";
+import Button from "./Button";
 import SelectBox, { Option } from "./SelectBox";
 import TitleValue from "./TitleValue";
 
@@ -52,12 +53,12 @@ const ModalContent2 = () => {
           <TitleValue title="근무 시간">
             <div className="flex items-center gap-2">
               <input
-                className="border-gray-border tracking-custom placeholder:text-placeholder w-full rounded-lg border px-3.5 py-2 text-sm"
+                className="w-full rounded-lg border border-gray-border px-3.5 py-2 text-sm tracking-custom placeholder:text-placeholder"
                 placeholder="오전 9:00"
               />
               ~
               <input
-                className="border-gray-border tracking-custom placeholder:text-placeholder w-full rounded-lg border px-3.5 py-2 text-sm"
+                className="w-full rounded-lg border border-gray-border px-3.5 py-2 text-sm tracking-custom placeholder:text-placeholder"
                 placeholder="오후 12:00"
               />
             </div>
@@ -65,12 +66,12 @@ const ModalContent2 = () => {
           <TitleValue title="휴게 시간">
             <div className="flex items-center gap-2">
               <input
-                className="border-gray-border tracking-custom placeholder:text-placeholder w-full rounded-lg border px-3.5 py-2 text-sm"
+                className="w-full rounded-lg border border-gray-border px-3.5 py-2 text-sm tracking-custom placeholder:text-placeholder"
                 placeholder="오전 9:30"
               />
               ~
               <input
-                className="border-gray-border tracking-custom placeholder:text-placeholder w-full rounded-lg border px-3.5 py-2 text-sm"
+                className="w-full rounded-lg border border-gray-border px-3.5 py-2 text-sm tracking-custom placeholder:text-placeholder"
                 placeholder="오전 10:30"
               />
             </div>
@@ -79,12 +80,8 @@ const ModalContent2 = () => {
         </div>
       </div>
       <div className="mt-9 grid grid-cols-2 gap-5">
-        <button className="border-blue text-blue tracking-custom hover:bg-blue rounded-lg border py-3 hover:text-white">
-          취소
-        </button>
-        <button className="border-blue text-blue tracking-custom hover:bg-blue rounded-lg border py-3 hover:text-white">
-          정보 추가
-        </button>
+        <Button label="취소" />
+        <Button label="정보 추가" />
       </div>
     </>
   );
